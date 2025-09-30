@@ -1,6 +1,6 @@
 CC      = gcc
 CFLAGS  = -Wall -Wextra 
-SRC = ./TD1/equation_solver.c
+SRC = ./TD1/temperature_converter.c
 # SRC     = $(wildcard *.c)
 OUT     = prog
 
