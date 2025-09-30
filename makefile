@@ -1,6 +1,7 @@
 CC      = gcc
-CFLAGS  = -Wall -Wextra -O2
-SRC     = $(wildcard *.c)
+CFLAGS  = -Wall -Wextra 
+SRC = ./TD1/equation_solver.c
+# SRC     = $(wildcard *.c)
 OUT     = prog
 
 # =============================
@@ -12,7 +13,7 @@ all: build run
 # Compilation complète
 build:
 	@clear
-	@$(CC) $(CFLAGS) $(SRC) -o $(OUT)
+	@$(CC) $(CFLAGS) $(SRC) -o $(OUT) -lm
 
 # Exécution
 run:
@@ -20,6 +21,8 @@ run:
 	@echo "============================================================================="
 	@echo ""
 	@./$(OUT)
+	@echo ""
+	@echo ""
 	@echo ""
 	@echo "-----------------------------------------------------------------------------"
 
