@@ -1,6 +1,6 @@
 CC      = gcc
 CFLAGS  = -Wall -Wextra 
-SRC = ./TD1/temperature_converter.c
+SRC = ./TD1/rebours.c
 # SRC     = $(wildcard *.c)
 OUT     = prog
 
@@ -10,12 +10,11 @@ OUT     = prog
 
 all: build run
 
-# Compilation complète
+
 build:
 	@clear
 	@$(CC) $(CFLAGS) $(SRC) -o $(OUT) -lm
 
-# Exécution
 run:
 	@echo ""
 	@echo "============================================================================="
@@ -26,7 +25,7 @@ run:
 	@echo ""
 	@echo "-----------------------------------------------------------------------------"
 
-# Nettoyage
+
 clean:
 	@clear
 	@rm -f $(OUT) *.o
