@@ -9,5 +9,6 @@ int main(void){
         i--;
         system("clear");
     }
+    
     return 0;
 }
