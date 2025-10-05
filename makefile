@@ -1,6 +1,6 @@
 CC      = gcc
 CFLAGS  = -Wall -Wextra 
-SRC = ./TD1/notes.c
+SRC = ./TD1/Série2/monte_carlo.c
 # SRC     = $(wildcard *.c)
 OUT     = prog
 
@@ -17,15 +17,9 @@ build:
 
 run:
 	@echo ""
-	@echo "============================================================================="
-	@echo ""
 	@./$(OUT)
 	@echo ""
-	@echo ""
-	@echo ""
-	@echo "============================================================================="
-
-
+	
 clean:
 	@clear
 	@rm -f $(OUT) *.o
